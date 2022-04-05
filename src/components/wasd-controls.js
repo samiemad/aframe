@@ -63,7 +63,7 @@ module.exports.Component = registerComponent('wasd-controls', {
     // Get movement vector and translate position.
     el.object3D.position.add(this.getMovementVector(delta));
   },
-  
+
   update: function (oldData) {
     // Reset velocity if axis have changed.
     if (oldData.adAxis !== this.data.adAxis) { this.velocity[oldData.adAxis] = 0; }
